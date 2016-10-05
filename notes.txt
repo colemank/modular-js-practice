@@ -1,0 +1,26 @@
+rules:
+- Self-Contained Module
+	- everything to do with this moduole is in this module
+	- no gloabal variables
+	- if a module manages more than one thing it should be split up
+-seperation of concerns
+- DRY code: Don't Repeat Yourself
+- efficient DOM usage
+	- very few $(selections)
+- no memory leaks
+	- all events an be unbound
+
+
+//object literal notation
+
+var myModule = {
+	name:'kyle';
+	age: '27';
+	sayName: function() {
+		alert(this.name);
+	}
+	setName: function (newName) {
+		 this.name = newName;
+	}
+};
+myModule.sayName();
